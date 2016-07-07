@@ -1,3 +1,3 @@
 # test-repo
 
-Arbitrary change.xx
+Arbitrary change.xxx
