@@ -12,4 +12,5 @@ git add README.md
 git commit -m "c-c-c-hanges"
 git push
 
-hub pull-request -m "This changes everything"
+PR_URL=$(hub pull-request -m "This changes everything")
+open $PR_URL
