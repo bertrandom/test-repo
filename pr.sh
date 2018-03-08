@@ -2,7 +2,6 @@
 BRANCH_NAME=$(git symbolic-ref --short -q HEAD)
 BRANCH_NUMBER=$(echo $BRANCH_NAME | sed -e 's/branch//g')
 let "BRANCH_NUMBER++"
-echo $BRANCH_NUMBER
 
 git checkout -b branch$BRANCH_NUMBER
 git push --set-upstream origin branch$BRANCH_NUMBER
@@ -14,4 +13,7 @@ git commit -m "add the word $RANDOM_WORD"
 git push
 
 PR_URL=$(hub pull-request -m "This changes everything")
+
+echo $PR_URL
+echo $PR_URL | pbcopy
 open $PR_URL
