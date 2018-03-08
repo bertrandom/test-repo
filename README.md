@@ -7,3 +7,6 @@ ridable
 unberufen
 debadge
 comfortless
+galosh
+transferential
+trisaccharose
