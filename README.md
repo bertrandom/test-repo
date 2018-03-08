@@ -1,11 +1,4 @@
 # test-repo
 
-Arbitrary change.xxx
-x
-x
-x
-x
-x
-x
-x
-x
+A list of really cool words:
+delthyrium
