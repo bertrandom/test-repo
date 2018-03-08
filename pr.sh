@@ -7,9 +7,10 @@ echo $BRANCH_NUMBER
 git checkout -b branch$BRANCH_NUMBER
 git push --set-upstream origin branch$BRANCH_NUMBER
 
-gshuf -n1 /usr/share/dict/words >> README.md
+RANDOM_WORD=$(gshuf -n1 /usr/share/dict/words)
+echo $RANDOM_WORD >> README.md
 git add README.md
-git commit -m "c-c-c-hanges"
+git commit -m "add the word $RANDOM_WORD"
 git push
 
 PR_URL=$(hub pull-request -m "This changes everything")
