@@ -7,7 +7,7 @@ echo $BRANCH_NUMBER
 git checkout -b branch$BRANCH_NUMBER
 git push --set-upstream origin branch$BRANCH_NUMBER
 
-echo "x" >> README.md
+gshuf -n1 /usr/share/dict/words >> README.md
 git add README.md
 git commit -m "c-c-c-hanges"
 git push
