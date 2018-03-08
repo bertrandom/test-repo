@@ -16,4 +16,3 @@ PR_URL=$(hub pull-request -m "This changes everything")
 
 echo $PR_URL
 echo $PR_URL | pbcopy
-open $PR_URL
